@@ -1,6 +1,6 @@
 import unittest
 
-from app import add
+from app import add, multiply
 
 
 class TestAdd(unittest.TestCase):
@@ -9,6 +9,11 @@ class TestAdd(unittest.TestCase):
 
     def test_identity(self):
         self.assertEqual(add(2, 0), 2)
+
+
+class TestMultiply(unittest.TestCase):
+    def test_multiply(self):
+        self.assertEqual(multiply(2, 3), 6)
 
 
 if __name__ == "__main__":
