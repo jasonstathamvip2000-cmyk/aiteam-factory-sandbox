@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>factory-sandbox</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      font-family: system-ui, sans-serif;
+      line-height: 1.6;
+      color: #172033;
+      background: #f3f5fa;
+    }
+    main {
+      width: 100%;
+      max-width: 640px;
+      padding: clamp(20px, 5vw, 48px);
+      border-radius: 16px;
+      background: #fff;
+      overflow-wrap: anywhere;
+    }
+    h1 { margin: 0; font-size: clamp(1.75rem, 6vw, 2.5rem); }
+    .button {
+      display: inline-block;
+      padding: 12px 24px;
+      border-radius: 8px;
+      color: #fff;
+      background: #234ac5;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .button:hover { background: #193798; }
+    a:focus-visible { outline: 3px solid #172033; outline-offset: 4px; }
+    section { margin-top: 32px; }
+    h2 { font-size: 1.25rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>factory-sandbox</h1>
+    <p>Môi trường thử nghiệm tạm thời cho nhà máy phần mềm AI Automation Phase 8, phục vụ thử nghiệm quy trình tự động hóa và không chứa mã nguồn vận hành thực tế.</p>
+    <a class="button" href="#lien-he">Liên hệ</a>
+    <section id="lien-he" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Liên hệ</h2>
+      <p>Vui lòng liên hệ người quản lý kho mã nguồn dự án để trao đổi thêm.</p>
+    </section>
+  </main>
