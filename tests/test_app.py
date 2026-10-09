@@ -1,6 +1,6 @@
 import unittest
 
-from app import add
+from app import add, is_odd
 
 
 class TestAdd(unittest.TestCase):
@@ -11,5 +11,12 @@ class TestAdd(unittest.TestCase):
         self.assertEqual(add(2, 0), 2)
 
 
+class TestIsOdd(unittest.TestCase):
+    def test_is_odd(self):
+        self.assertTrue(is_odd(1))
+        self.assertFalse(is_odd(2))
+
+
 if __name__ == "__main__":
     unittest.main()
+
